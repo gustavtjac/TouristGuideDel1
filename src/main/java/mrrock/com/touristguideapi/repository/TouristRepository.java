@@ -17,8 +17,8 @@ public class TouristRepository {
 
     public void makeAttractions(){
         attractions.add(new TouristAttraction("Tivoli","Danmarks fedeste forlystelsespark. Estableret i 1949 og kan holde hele 9149 mennekser"));
-        attractions.add(new TouristAttraction("KEA","Skole"));
-        attractions.add(new TouristAttraction("SilverBack Sportsgym","Top klasse bodybuilding center hvor man kan få de varmeste legdays"));
+        attractions.add(new TouristAttraction("KEA","formål er at udvikle og udbyde praksisrettede videregående uddannelser på erhvervsakademi- og professionsbachelorniveau"));
+        attractions.add(new TouristAttraction("Bakken","verdens ældste forlystelsespark! Vi har alt lige fra de helt vilde forlystelser til hyggelige og børnevenlige forlystelser."));
     }
 
     public List<TouristAttraction> getAllTouristAttractions(){

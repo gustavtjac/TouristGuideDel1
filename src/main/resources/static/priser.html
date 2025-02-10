@@ -1,99 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Tourist Guide By GustavoRock</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css?version=51">
-        
-    </head>
-    <body>
-        <script src="https://kit.fontawesome.com/f054b36f07.js" crossorigin="anonymous"></script>
-        <header class="heading" style="">
-            <div style="display: flex; justify-content: center; align-items: center; ">
-                <a href="index.html" style="background-color: rgba(255, 255, 255, 0);"><i id="headerlogo" class="fa-solid fa-location-dot"></i></a>
-                <h1 id="headertext">Gustavo Rocks Rejse Bureau</h1>
-            </div>
-            
-            <div style="display: flex; justify-content:right">
-                <a style="margin-right: 50px;"class="links" href="huskeliste.html"><p>Huskeliste</p></a>
-                <a style="margin-right: 50px;"class="links"href="priser.html"><p>Priser</p></a>
-                <a style="margin-right: 50px;"class="links" href="http://localhost:8080/attractions"><p>Se alle Attraktioner</p></a>
-            </div>
-            
-        </header>
-        <div class="indhold2">
-        <div>
-                <div>
-                    <h2>Priser og andet info</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt est voluptas aliquam architecto praesentium. Enim nobis aliquid, voluptatibus doloribus maiores qui voluptatem soluta, sequi nemo rem quam reiciendis exercitationem obcaecati?</p>
-                </div>
-
-        </div>
-        
-        <div class="container">
-            <table>
-                <thead>
-                <tr>
-                    <th>Forlystelse</th>
-                    <th>Pris</th>
-                    <th>Børnevenlig?</th>
-                    <th>Vurdering fra 1-10</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Tivoli</td>
-                    <td>1000 Kr</td>
-                    <td>Ja</td>
-                    <td>7/10</td>
-                  </tr>
-                  <tr>
-                    <td>SilverBack Sportsgym</td>
-                    <td>70 Kr</td>
-                    <td>Ja</td>
-                    <td>9/10</td>
-                  </tr>
-                  <tr>
-                    <td>KEA</td>
-                    <td>-6000kr</td>
-                    <td>Nej</td>
-                    <td>8/10</td>
-                  </tr>
-                </tbody>
-            </table>
-        </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tourist Guide By GustavoRock</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<script src="https://kit.fontawesome.com/f054b36f07.js" crossorigin="anonymous"></script>
+<header class="heading">
+    <div class="header-container">
+        <a href="index.html" class="header-logo"><i id="headerlogo" class="fa-solid fa-location-dot"></i></a>
+        <h1 id="headertext">Gustavo Rocks Rejse Bureau</h1>
     </div>
-
-    
-
-    
-        
-        
-
-
-
-
-
-
-        <footer>
- <div>
-    <h5>Information</h5>
-    <p>Gustav Torup Jacobsen <br> +4530221858 <br> Gladsaxevej 109</p>
- </div>
- <div>
-<h5>Gruppe 5</h5>
-    <p>Gustavo <br> Andreas g. <br> FreddieFox <br> Daniel</p>
- </div>
+    <nav class="nav-links">
+        <a class="links" href="huskeliste.html"><p>Huskeliste</p></a>
+        <a class="links" href="priser.html"><p>Priser</p></a>
+        <a class="links" href="http://localhost:8080/attractions"><p>Se alle Attraktioner</p></a>
+    </nav>
+</header>
+<div class="indhold2">
+    <section>
+        <h2>Priser og andet info</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt est voluptas aliquam architecto praesentium. Enim nobis aliquid, voluptatibus doloribus maiores qui voluptatem soluta, sequi nemo rem quam reiciendis exercitationem obcaecati?</p>
+    </section>
+    <div class="container">
+        <table>
+            <thead>
+            <tr>
+                <th>Forlystelse</th>
+                <th>Pris</th>
+                <th>Børnevenlig?</th>
+                <th>Vurdering fra 1-10</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Tivoli</td>
+                <td>1000 Kr</td>
+                <td>Ja</td>
+                <td>7/10</td>
+            </tr>
+            <tr>
+                <td>SilverBack Sportsgym</td>
+                <td>70 Kr</td>
+                <td>Ja</td>
+                <td>9/10</td>
+            </tr>
+            <tr>
+                <td>KEA</td>
+                <td>-6000kr</td>
+                <td>Nej</td>
+                <td>8/10</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<footer>
     <div>
-        <p>
-            <span id="currentDate"></span>
-        </p>
-
+        <h5>Information</h5>
+        <p>Gustav Torup Jacobsen <br> +4530221858 <br> Gladsaxevej 109</p>
     </div>
-        </footer>
-        <script type="text/javascript" src="script.js?version=51"></script>
-    </body>
+    <div>
+        <h5>Gruppe 5</h5>
+        <p>Gustavo <br> Andreas G. <br> FreddieFox <br> Daniel</p>
+    </div>
+    <div>
+        <p><span id="currentDate"></span></p>
+    </div>
+</footer>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
 </html>
