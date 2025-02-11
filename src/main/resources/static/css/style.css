@@ -1,3 +1,12 @@
+/* Variabler for farver til genbrug */
+:root {
+    --primær-farve: #efebe0;
+    --footer-farve: #6b796a;
+    --header-farve: #d5bd9f;
+    --overskrift-farve: #10312A;
+    --tekst-farve: #333;
+}
+
 /* Reset for at fjerne standardmargener og -polstring */
 * {
     margin: 0;
@@ -8,16 +17,32 @@
 /* Generelle skrifttyper og baggrund */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--primær-farve);
+    color: var(--tekst-farve);
     line-height: 1.6;
-    text-align: center;
+}
+
+/* Overskrifter */
+h1, h2, h3, h4, h5 {
+    color: var(--overskrift-farve);
 }
 
 /* Navigation */
 header {
-    background-color: #333;
+    background-color: var(--header-farve);
     padding: 15px 0;
+    text-align: center;
+}
+
+a {
+    color: var(--tekst-farve);
+    font-size: 18px;
+    padding: 10px;
+    text-decoration-line: underline;
+}
+
+a:hover {
+    transition: 0.3s;
 }
 
 nav ul {
@@ -27,12 +52,8 @@ nav ul {
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
-    color: white;
+    color: var(--tekst-farve);
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
@@ -45,99 +66,185 @@ nav ul li a:hover {
 /* Hovedindhold */
 main {
     padding: 20px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 20px auto;
-    background: white;
+    background: var(--primær-farve);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-/* Attraktions-container for at sikre korrekt layout */
-.attraction-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Attraktions-layout */
-article {
+/* Attraktionens flex-container */
+.attraction-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    background: #fff;
+    gap: 40px;
+    background: var(--primær-farve);
     padding: 20px;
-    margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
 /* Skiftevis layout */
-article:nth-child(even) {
+article:nth-child(even) .attraction-content {
     flex-direction: row-reverse;
 }
 
-/* Billeder */
-article img {
-    width: 45%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
+/* Links bag billederne */
+.attraction-content a {
+    display: flex;
+    width: 40%;
 }
 
-/* Tekst */
-article div {
-    width: 50%;
-    text-align: left;
-}
-
-/* Overskrifter */
-article h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-/* Brødtekst */
-article p {
-    font-size: 16px;
-}
-
-/* Responsivt design */
-@media (max-width: 768px) {
-    article {
-        flex-direction: column !important;
-        text-align: center;
-    }
-
-    article img,
-    article div {
-        width: 100%;
-    }
-}
-
-/* Tabeller */
-table {
+/* Sikrer, at billederne forbliver store */
+.attraction-content img {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background: white;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-th, td {
-    padding: 10px;
-    border: 1px solid black;
+/* Tekstblok */
+.text-content {
+    width: 55%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Priser overskrift */
+.priser-overskrift {
+    margin: 20px auto;
+    padding: 20px;
+    color: var(--tekst-farve);
+}
+
+/* Pris Table Design */
+.priser-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: var(--primær-farve);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
     text-align: left;
 }
 
-th {
-    background: #ddd;
+/* Tabel Header-styling */
+.priser-table thead {
+    background: var(--header-farve);
+    color: var(--tekst-farve);
+    font-weight: bold;
+}
+
+.priser-table th, .priser-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Skiftevis farveskift i kolonner */
+.priser-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Hover-effekt */
+.priser-table tbody tr:hover {
+    background: #f1f1f1;
+    transition: 0.3s;
+}
+
+/* Justering af kolonnebredder */
+.priser-table th:nth-child(1), .priser-table td:nth-child(1) {
+    width: 30%;
+}
+
+.priser-table th:nth-child(2), .priser-table td:nth-child(2) {
+    width: 20%;
+}
+
+.priser-table th:nth-child(3), .priser-table td:nth-child(3) {
+    width: 20%;
+    text-align: center;
+}
+
+.priser-table th:nth-child(4), .priser-table td:nth-child(4) {
+    width: 15%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Pakkeliste Table Design */
+.pakkeliste-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: var(--primær-farve);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+/* Tabel header-styling */
+.pakkeliste-table thead {
+    background: var(--header-farve);
+    color: var(--tekst-farve);
+    font-weight: bold;
+}
+
+.pakkeliste-table th, .pakkeliste-table td {
+    padding: 12px;
+    border-bottom: 1px solid var(--footer-farve);
+}
+
+/* Alternating row colors */
+.pakkeliste-table tbody tr:nth-child(even) {
+    background: var(--primær-farve);
+}
+
+/* Hover-effekt */
+.pakkeliste-table tbody tr:hover {
+    background: var(--footer-farve);
+    color: white;
+    transition: 0.3s;
+}
+
+/* Stil for checkboxes */
+.pakkeliste-table input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--header-farve);
 }
 
 /* Footer */
 footer {
-    background-color: #222;
-    color: white;
+    background-color: var(--footer-farve);
+    color: var(--tekst-farve);
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+}
+
+/* Responsivt design for mobil */
+@media (max-width: 768px) {
+    .attraction-content {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .attraction-content img, .text-content {
+        width: 48%;
+    }
+
+    .priser-table, .pakkeliste-table {
+        width: 100%;
+    }
+
+    .priser-table th, .priser-table td, .pakkeliste-table th, .pakkeliste-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
 }

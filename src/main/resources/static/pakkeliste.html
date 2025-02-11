@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Huskeliste</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<script src="https://kit.fontawesome.com/f054b36f07.js" crossorigin="anonymous"></script>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="pakkeliste.html">Huskeliste</a></li>
+            <li><a href="priser.html">Priser</a></li>
+            <li><a href="http://localhost:8080/attractions">Attractions</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Pakkeliste til din tur!</h2>
+    <p>Her er en pakkeliste til hver attraktion, så du er godt forberedt.</p>
+
+    <table class="pakkeliste-table">
+        <thead>
+        <tr>
+            <th>Attraktion</th>
+            <th>Hvad skal du have med?</th>
+            <th>Noter</th>
+            <th>✅ Pakket?</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Tivoli -->
+        <tr>
+            <td rowspan="3"><a href="http://localhost:8080/attractions/tivoli">Tivoli</a></td>
+            <td>Billet</td>
+            <td>Turpas anbefales for fri adgang</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Penge</td>
+            <td>Til mad og souvenirs</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Snacks</td>
+            <td>Hvis du vil spare penge</td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+        <!-- Bakken -->
+        <tr>
+            <td rowspan="2"><a href="http://localhost:8080/attractions/Bakken">Bakken</a></td>
+            <td>Solcreme</td>
+            <td>Godt at have i sommervarmen</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Madpakke</td>
+            <td>For at spare penge</td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+        <!-- KEA -->
+        <tr>
+            <td rowspan="2"><a href="http://localhost:8080/attractions/kea">KEA</a></td>
+            <td>Computer</td>
+            <td>Bruges til forelæsninger</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Notesbog</td>
+            <td>Til at tage noter</td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+        <!-- Nyhavn -->
+        <tr>
+            <td rowspan="2"><a href="http://localhost:8080/attractions/nyhavn">Nyhavn</a></td>
+            <td>Kamera</td>
+            <td>Perfekt til billeder</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Solbriller</td>
+            <td>Hvis vejret er godt</td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+        <!-- Den Lille Havfrue -->
+        <tr>
+            <td rowspan="2"><a href="http://localhost:8080/attractions/den-lille-havfrue">Den Lille Havfrue</a></td>
+            <td>Vandflaske</td>
+            <td>For at holde dig hydreret</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Let jakke</td>
+            <td>Kan være blæsende ved vandet</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+
+<footer>
+    <h5>Information</h5>
+    <p>CHAMPSNE <br> Guldbergsgade</p>
+</footer>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

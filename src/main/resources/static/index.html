@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tourist Guide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <script src="https://kit.fontawesome.com/f054b36f07.js" crossorigin="anonymous"></script>
@@ -14,58 +14,78 @@
     <nav>
         <ul>
             <li><a href="index.html">Forside</a></li>
-            <li><a href="huskeliste.html">Huskeliste</a></li>
+            <li><a href="pakkeliste.html">Huskeliste</a></li>
             <li><a href="priser.html">Priser</a></li>
             <li><a href="http://localhost:8080/attractions">Attractions</a></li>
         </ul>
     </nav>
 </header>
 
-<main>
+<main class="attraction-container">
 
     <article>
-        <a href="http://localhost:8080/attractions/tivoli">
-            <img src="Images/tivoli.jpg" alt="Billede af Tivoli Gardens">
-        </a>
-        <h2>Tivoli Gardens</h2>
-        <p>Discover 30 thrilling rides, exciting concerts, captivating ballet and theatre performances, and delicious
-            dining at over 30 restaurants and eateries.</p>
+        <div class="attraction-content">
+            <a href="http://localhost:8080/attractions/tivoli">
+                <img src="Images/tivoli.jpg" alt="Billede af Tivoli Gardens">
+            </a>
+            <div class="text-content">
+                <h2>Tivoli Gardens</h2>
+                <p>Discover 30 thrilling rides, exciting concerts, captivating ballet and theatre performances, and delicious
+                    dining at over 30 restaurants and eateries.</p>
+            </div>
+        </div>
     </article>
 
     <article>
-        <h2>Bakken</h2>
-        <p>Verdens ældste forlystelsespark! Vi har alt lige fra de helt vilde forlystelser til hyggelige og børnevenlige
-            forlystelser.</p>
-        <a href="http://localhost:8080/attractions/Bakken">
-            <img src="Images/Dyrehavsbakken.jpg" alt="Billede af en dag på Bakken">
-        </a>
+        <div class="attraction-content">
+            <a href="http://localhost:8080/attractions/Bakken">
+                <img src="Images/Dyrehavsbakken.jpg" alt="Billede af en dag på Bakken">
+            </a>
+            <div class="text-content">
+                <h2>Bakken</h2>
+                <p>Verdens ældste forlystelsespark! Vi har alt lige fra de helt vilde forlystelser til hyggelige og børnevenlige
+                    forlystelser.</p>
+            </div>
+        </div>
     </article>
 
     <article>
-        <a href="http://localhost:8080/attractions/kea">
-            <img src="Images/KEA%20bygning.jpg" alt="Billede af KEA bygning på Guldbergsgade">
-        </a>
-        <h2>Københavns Erhvervs Akademi</h2>
-        <p>KEA - Københavns Erhvervsakademis formål er at udvikle og udbyde praksisrettede videregående uddannelser på
-            erhvervsakademi- og professionsbachelorniveau.</p>
+        <div class="attraction-content">
+            <a href="http://localhost:8080/attractions/kea">
+                <img src="Images/KEA%20bygning.jpg" alt="Billede af KEA bygning på Guldbergsgade">
+            </a>
+            <div class="text-content">
+                <h2>Københavns Erhvervs Akademi</h2>
+                <p>KEA - Københavns Erhvervsakademis formål er at udvikle og udbyde praksisrettede videregående uddannelser på
+                    erhvervsakademi- og professionsbachelorniveau.</p>
+            </div>
+        </div>
     </article>
 
     <article>
-        <a href="http://localhost:8080/attractions/nyhavn">
-            <img src="Images/nyhavn.jpg" alt="Billede af Nyhavn">
-        </a>
-        <h2>Nyhavn</h2>
-        <p>Nyhavn er en af Københavns mest ikoniske destinationer. De farverige huse, hyggelige caféer og historiske
-            sejlskibe skaber en fantastisk atmosfære langs kanalen.</p>
+        <div class="attraction-content">
+            <a href="http://localhost:8080/attractions/nyhavn">
+                <img src="Images/nyhavn.jpg" alt="Billede af Nyhavn">
+            </a>
+            <div class="text-content">
+                <h2>Nyhavn</h2>
+                <p>Nyhavn er en af Københavns mest ikoniske destinationer. De farverige huse, hyggelige caféer og historiske
+                    sejlskibe skaber en fantastisk atmosfære langs kanalen.</p>
+            </div>
+        </div>
     </article>
 
     <article>
-        <a href="http://localhost:8080/attractions/den-lille-havfrue">
-            <img src="Images/den-lille-havfrue.jpg" alt="Billede af Den Lille Havfrue">
-        </a>
-        <h2>Den Lille Havfrue</h2>
-        <p>Den Lille Havfrue er en af Københavns mest berømte seværdigheder. Statuen, inspireret af H.C. Andersens
-            eventyr, sidder på en sten ved Langelinie og tiltrækker besøgende fra hele verden.</p>
+        <div class="attraction-content">
+            <a href="http://localhost:8080/attractions/den-lille-havfrue">
+                <img src="Images/den-lille-havfrue.jpg" alt="Billede af Den Lille Havfrue">
+            </a>
+            <div class="text-content">
+                <h2>Den Lille Havfrue</h2>
+                <p>Den Lille Havfrue er en af Københavns mest berømte seværdigheder. Statuen, inspireret af H.C. Andersens
+                    eventyr, sidder på en sten ved Langelinie og tiltrækker besøgende fra hele verden.</p>
+            </div>
+        </div>
     </article>
 
 </main>
